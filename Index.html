@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The CheckMates - Financial Account Management</title>
+    <title>The CheckMates - Financial Services Packages</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Basic styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,45 +14,48 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #1e3d59; /* Dark blue */
+            background-color: #1e3d59;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
+        h1, h2 {
+            color: #1e3d59;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        .packages-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
         }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
+        .package {
+            background-color: white;
+            width: 300px;
             margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        #home {
-            background-color: #e0f5e8; /* Light green background */
+        .package img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .package-details {
+            padding: 20px;
             text-align: center;
         }
-        #home img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            margin-top: 20px;
+        .package h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #1e3d59;
         }
-        #services img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            margin-top: 20px;
+        .package p {
+            font-size: 1em;
+            color: #333;
         }
         footer {
-            background-color: #1e3d59; /* Dark blue */
+            background-color: #1e3d59;
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -62,41 +67,57 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to The CheckMates</h1>
+        <h1>Financial Services Packages</h1>
         <p>Your trusted partner in Financial Account Management</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <section id="home">
-        <h2>About The CheckMates</h2>
-        <p>At The CheckMates, we specialize in managing financial portfolios across various asset classes. Our team of experts ensures that your investments are strategically positioned to maximize returns, while managing risk in the dynamic markets of stocks, options, forex, cryptocurrency, and futures.</p>
-        <!-- Stock photo of financial analysis -->
-        <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Financial Analysis Image">
+    
+    <section class="packages-container">
+        <!-- Stock Management Package -->
+        <div class="package">
+            <img src="https://images.unsplash.com/photo-1565372893051-6a3b4b262b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwyfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Stock Management">
+            <div class="package-details">
+                <h3>Stock Management</h3>
+                <p>Personalized strategies to grow and manage your stock portfolio with low risk and high returns.</p>
+            </div>
+        </div>
+
+        <!-- Options Trading Package -->
+        <div class="package">
+            <img src="https://images.unsplash.com/photo-1591696205602-2b56591c216b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Options Trading">
+            <div class="package-details">
+                <h3>Options Trading</h3>
+                <p>Advanced options trading solutions tailored to enhance your financial strategy and risk management.</p>
+            </div>
+        </div>
+
+        <!-- Forex Trading Package -->
+        <div class="package">
+            <img src="https://images.unsplash.com/photo-1538582702160-6cfb24931f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Forex Trading">
+            <div class="package-details">
+                <h3>Forex Trading</h3>
+                <p>Gain access to the world’s largest financial market with our proven forex trading strategies and tools.</p>
+            </div>
+        </div>
+
+        <!-- Cryptocurrency Investment Package -->
+        <div class="package">
+            <img src="https://images.unsplash.com/photo-1593526515077-3ae975d38d74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Cryptocurrency Investment">
+            <div class="package-details">
+                <h3>Cryptocurrency Investment</h3>
+                <p>Navigate the complex world of cryptocurrencies with our expert-backed strategies for high-growth opportunities.</p>
+            </div>
+        </div>
+
+        <!-- Futures Trading Package -->
+        <div class="package">
+            <img src="https://images.unsplash.com/photo-1504274066651-8f07dbf5bf1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Futures Trading">
+            <div class="package-details">
+                <h3>Futures Trading</h3>
+                <p>Plan for tomorrow with futures contracts that protect against volatility and prepare for long-term success.</p>
+            </div>
+        </div>
     </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>Stock Management:</strong> Personalized strategies to grow your stock portfolio.</li>
-            <li><strong>Options Trading:</strong> Advanced options trading solutions tailored to your financial goals.</li>
-            <li><strong>Forex Trading:</strong> Expertise in currency markets to ensure profitable currency trading.</li>
-            <li><strong>Cryptocurrency Investment:</strong> Navigating the complex world of crypto to identify potential high-growth opportunities.</li>
-            <li><strong>Futures Trading:</strong> Future-proof your investments with strategic futures trading.</li>
-        </ul>
-        <!-- Stock photo related to stock market -->
-        <img src="https://images.unsplash.com/photo-1527240184164-3f1323c7fbcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDg1fDB8MHwxfGFsbHwxfHx8fHx8fHwxNjkxMzgzNzE2&ixlib=rb-4.0.3&q=80&w=1080" alt="Stock Market Image">
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@thecheckmates.com</p>
-        <p>Phone: +1 555-987-6543</p>
-        <p>Office: 1234 Market Street, Financial District, New York, NY</p>
-    </section>
+
     <footer>
         <p>&copy; 2024 The CheckMates. All rights reserved.</p>
     </footer>
